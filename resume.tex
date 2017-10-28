@@ -1,0 +1,93 @@
+\documentclass{article}
+\usepackage[top=50pt,bottom=50pt,left=48pt,right=46pt]{geometry}
+
+\usepackage{microtype}
+\usepackage{vwcol}  
+\usepackage{lipsum}  
+
+% My own commands
+\newcommand{\minititle}[1]{\begin{center}\textbf{#1} \end{center} \vspace{0.2cm}}
+\newcommand{\mytitle}[1]{{\Large\textbf{#1}} \vspace{0.2cm}}
+\newcommand{\resumeEntry}[3]{{\large \textbf{#1} - #2} \\ \small{#3}}
+
+\title{\textbf{Emmet Murray}}
+\date{\today}
+
+\begin{document} 
+% My name
+
+% LHS Column
+\begin{minipage}[t]{0.6\linewidth}   
+    \maketitle
+    {
+        \minititle{Work Experience}
+        \resumeEntry{Literatu}{Automation and Web Development}{August 2016 - Present}
+        \begin{itemize}
+            \setlength\itemsep{0.05cm}
+            \item Independently researching and developing solutions to problems involving large datasets of over 15,000 files
+            \item Applied and developed skills in problem solving, aesthetic web design and programmatic automation.
+            \item Working closely with co-workers to design an intuitive online service
+            \item Major revamp of previous website
+            \item Vastly reduced the time required by users to find the information they need
+        \end{itemize}
+    }
+    {
+        \vspace{0.2cm}
+        %
+        \minititle{Volunteering}
+        \resumeEntry{Code Club St Aloysius College}{Tutor}{March 2017 - Present}
+        \begin{itemize}
+            \setlength\itemsep{0.05cm}
+            \item Running an after-school programming club for differently aged and skilled students
+            \item Creating lesson plans and tasks to introduce students to programming
+        \end{itemize}
+        %
+        \vspace{0.4cm}
+        %
+        \resumeEntry{The UNSW Tea \& Coffee Society}{Vice-President (previously President, Secretary)}{October 2016 - Present}
+        \begin{itemize}
+            \setlength\itemsep{0.05cm}
+            \item Coordinating and organising weekly gatherings for a society with over 1000 members 
+            \item Led the logistics and organisation of a high tea outing for the society at QVB tea room, a successful event with over 100 guests
+        \end{itemize}
+    }
+    {
+        \vspace{0.2cm}
+        %
+        \minititle{Education}
+        \resumeEntry{University of New South Wales}{Bachelor of Engineering, (Honours) Software}{February 2016 - Present}
+        \begin{itemize}
+            \setlength\itemsep{0.05cm}
+            \item Distinction average
+            \item UNSW Taido Club member
+            \item Tea and Coffee Society member and vice-president
+            \item Computer Science Engineering Society - Social Team
+        \end{itemize}
+        %
+    }
+\end{minipage}\hspace{1cm}
+% RHS column
+\begin{minipage}[t]{0.25\linewidth}
+    
+    \vspace{0.2cm}
+    % Contact details
+    {
+        \mytitle{Contact me}
+
+        +61 431 890 818 \\
+        e.minor.murray@gmail.com \\
+    }
+
+    \vspace{1cm}
+
+    % Profile, personal description
+    {
+        \mytitle{Profile}
+
+        I'm a dedicated and passionate student who enjoys solving challenging technical problems.
+        My leadership abilities have been extended through my keen involvement in my work and volunteering experiences, which reflect my broad interests in the world.
+        I have a calm disposition which allows me to work well in high stress environments.
+    }
+\end{minipage}
+
+\end{document}
