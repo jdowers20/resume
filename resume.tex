@@ -1,8 +1,13 @@
 \documentclass{article}
 \usepackage[top=40pt,bottom=40pt,left=35pt,right=35pt]{geometry}
 
+
+% Helper Packages
 \usepackage{microtype}
-\usepackage{vwcol}  
+\usepackage{vwcol} 
+\pagenumbering{gobble}
+
+% Hyperlinks
 \usepackage{hyperref}  
 \hypersetup{
     colorlinks=true,
@@ -10,9 +15,9 @@
 }
 
 % My own commands
-\newcommand{\minititle}[1]{\begin{center}\textbf{#1} \end{center} \vspace{0.2cm}}
-\newcommand{\mytitle}[1]{{\Large\textbf{#1}} \vspace{0.2cm}}
-\newcommand{\resumeEntry}[3]{{\large \textbf{#1} - #2} \\ \small{#3}}
+\newcommand{\minititle}[1]{{\Large \begin{center} \textbf{#1} \end{center}} \vspace{0.2cm}}
+\newcommand{\mytitle}[1]{{\Large \textbf{#1}} \vspace{0.2cm}}
+\newcommand{\resumeEntry}[3]{{\large \textbf{#1} - #2} \\ \small{#3} }
 
 \title{\textbf{Emmet Murray}}
 \date{\today}
@@ -32,7 +37,7 @@
         \minititle{Work Experience}
         \resumeEntry{Literatu}{Automation and Web Development}{August 2016 - Present}
         \begin{itemize}
-            \setlength\itemsep{0.05cm}
+            \setlength\itemsep{0.03cm}
             \item Independently researching and developing solutions to problems involving large datasets of over \textbf{15,000 files}
             \item Applied and developed skills in problem solving, aesthetic web design and programmatic automation.
             \item Working closely with co-workers to design an intuitive online service
@@ -43,7 +48,7 @@
         %
         \resumeEntry{UNSW}{Casual Academic - Tutoring}{February 2018 - Present}
         \begin{itemize}
-            \setlength\itemsep{0.05cm}
+            \setlength\itemsep{0.03cm}
             \item Teaching first time programmers how to understand and utilise basic programming concepts
         \end{itemize}
     }
@@ -53,7 +58,7 @@
         \minititle{Volunteering}
         \resumeEntry{Code Club St Aloysius College}{Tutor}{March 2017 - Present}
         \begin{itemize}
-            \setlength\itemsep{0.05cm}
+            \setlength\itemsep{0.03cm}
             \item Running an after-school programming club for differently aged and skilled students
             \item Creating lesson plans and tasks to introduce students to programming
         \end{itemize}
@@ -62,7 +67,7 @@
         %
         \resumeEntry{The UNSW Tea \& Coffee Society}{Vice-President (previously President, Secretary)}{October 2016 - Present}
         \begin{itemize}
-            \setlength\itemsep{0.05cm}
+            \setlength\itemsep{0.03cm}
             \item Coordinating and organising weekly gatherings for a society with over 500 members 
             \item Led the logistics and organisation of a high tea outing for the society at QVB tea room, a successful event with over 100 guests
         \end{itemize}
@@ -73,20 +78,18 @@
         \minititle{Education}
         \resumeEntry{University of New South Wales}{Bachelor of Engineering, (Honours) Software}{February 2016 - Present}
         \begin{itemize}
-            \setlength\itemsep{0.05cm}
-            \item Distinction average
+            \setlength\itemsep{0.03cm}
+            \item \textbf{Distinction average}
             \item UNSW Taido Club member
-            \item CSESoc Social Team
         \end{itemize}
         %
         \vspace{0.4cm}
         %
         \resumeEntry{Etel{\"a} Tapiolan Lukio, Finland}{Rotary Youth Exchange Student}{January 2015 - January 2016}
         \begin{itemize}
-            \setlength\itemsep{0.05cm}
+            \setlength\itemsep{0.03cm}
             \item Acquired conversational proficiency in Finnish in under a year of study
-            \item Studied English literature, Spanish, German, mathematics, physics, Finnish and music in Finnish
-            \item Adapted to a foreign environment by conquering language and cultural barriers
+            \item Studied English Literature, Spanish, German, Mathematics, Physics, Finnish and Music in Finnish
 
         \end{itemize}
     }
