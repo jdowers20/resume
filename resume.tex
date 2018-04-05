@@ -1,5 +1,5 @@
-\documentclass{article}
-\usepackage[top=40pt,bottom=40pt,left=35pt,right=35pt]{geometry}
+\documentclass[a4paper]{article}
+\usepackage[top=60pt,bottom=40pt,left=40pt,right=40pt]{geometry}
 
 % Helper Packages
 \usepackage{microtype}
@@ -22,23 +22,24 @@
 \date{\today}
 
 \begin{document} 
+
+%title
+\begin{center}
+    { \Huge \textbf{Emmet Murray}} \\
+    \vspace{0.4cm}
+    as of \today
+\end{center}
 % My name
 %
 % LHS Column
 \begin{minipage}[t]{0.6\linewidth}   
-    %Title
-    \begin{center}
-        { \huge \textbf{Emmet Murray}} \\
-        \vspace{0.4cm}
-        As of \today
-    \end{center}
     {
         \minititle{Work Experience}
         \resumeEntry{Literatu}{Automation and Web Development}{August 2016 - Present}
         \begin{itemize}
             \setlength\itemsep{0.03cm}
             \item Independently researching and developing solutions to problems involving large datasets of over \textbf{15,000 files}
-            \item Applied and developed skills in problem solving, aesthetic web design and programmatic automation.
+            \item Applied and developed skills in problem solving, aesthetic web design and programmatic automation
             \item Working closely with co-workers to design an intuitive online service
             \item Major revamp of previous website
         \end{itemize}
@@ -49,6 +50,28 @@
         \begin{itemize}
             \setlength\itemsep{0.03cm}
             \item Teaching first time programmers how to understand and utilise basic programming concepts
+        \end{itemize}
+    }
+    {
+        \vspace{0.1cm}
+        %
+        \minititle{Education}
+        \resumeEntry{University of New South Wales}{Bachelor of Engineering, Software (Honours)}{February 2016 - December 2019}
+        \begin{itemize}
+            \setlength\itemsep{0.03cm}
+            \item \textbf{Distinction average}
+            \item UNSW Taido Club member
+            \item UNSW CSESoc member
+        \end{itemize}
+        %
+        \vspace{0.4cm}
+        %
+        \resumeEntry{Etel{\"a} Tapiolan Lukio, Finland}{Rotary Youth Exchange Student}{January 2015 - January 2016}
+        \begin{itemize}
+            \setlength\itemsep{0.03cm}
+            \item Acquired conversational proficiency in Finnish in under a year of study
+            \item Studied English Literature, Spanish, German, Mathematics, Physics, Finnish and Music in Finnish
+
         \end{itemize}
     }
     {
@@ -71,28 +94,7 @@
             \item Led the logistics and organisation of a high tea outing for the society at QVB tea room, a successful event with over 100 guests
         \end{itemize}
     }
-    {
-        \vspace{0.1cm}
-        %
-        \minititle{Education}
-        \resumeEntry{University of New South Wales}{Bachelor of Engineering, (Honours) Software}{February 2016 - Present}
-        \begin{itemize}
-            \setlength\itemsep{0.03cm}
-            \item \textbf{Distinction average}
-            \item UNSW Taido Club member
-        \end{itemize}
-        %
-        \vspace{0.4cm}
-        %
-        \resumeEntry{Etel{\"a} Tapiolan Lukio, Finland}{Rotary Youth Exchange Student}{January 2015 - January 2016}
-        \begin{itemize}
-            \setlength\itemsep{0.03cm}
-            \item Acquired conversational proficiency in Finnish in under a year of study
-            \item Studied English Literature, Spanish, German, Mathematics, Physics, Finnish and Music in Finnish
-
-        \end{itemize}
-    }
-\end{minipage}\hspace{1cm}
+\end{minipage}\hspace{0.8cm}
 % RHS column
 \begin{minipage}[t]{0.3\linewidth}
     %
@@ -118,21 +120,23 @@
     }
     % Profile, personal description
     \vspace{0.3cm}
-    %
+
     {
-        \mytitle{Profile}
-        
-        I'm a dedicated and passionate student who enjoys solving challenging technical problems.
-        My leadership abilities have been extended through my keen involvement in my work and volunteering experiences, which reflect my broad interests in the world.
-        I have a calm disposition which allows me to work well in high stress environments. \\
+        \mytitle{Awards}
+
+        Macquarie Group \& UNSW Software Engineering Prize (2017) \\
+
+        Finnish National Certificate Of Language Proficiency (2015) \\
+
+        Surf Life Saving Australia Bronze Medallion (2011)
     }
     %
-    \vspace{0.3cm}
+    \vspace{0.5cm}
     
     {
         \mytitle{Technical Skillset}
 
-        C, Java, C++ program development \\ 
+        C, Java and C++ program development \\ 
 
         Web development (Javascript, Angular 1/2, Node.js, Flask, Apache) \\
 
@@ -142,20 +146,21 @@
 
         Familiar with UNIX based and Windows Operating systems \\
 
-        {\large \LaTeX}
+        {\large \LaTeX} \\
+        
+        Learning Haskell
     }
 
     \vspace{0.5cm}
-
+    %
     {
-        \mytitle{Awards}
-
-        Macquarie Group \& UNSW Software Engineering Prize \\
-
-        Finnish National Certificate Of Language Proficiency \\
-
-        Surf Life Saving Australia Bronze Medallion
+        \mytitle{Profile}
+        
+        I'm a dedicated and passionate student who enjoys solving challenging, technical problems.
+        My leadership abilities have been extended through my keen involvement in my work and volunteering experiences, which reflect my broad interests in the world.
+        I have a calm disposition which allows me to work well in high-stress environments. \\
     }
+
 %
 %
 \end{minipage}
